@@ -1,7 +1,7 @@
 - name : copy catalogue.service
   ansible.builtin.copy :
-    src : {{component}}.service
-    dest : /etc/systemd/system/{{component}}.service
+    src : catalogue.service
+    dest : /etc/systemd/system/catalogue.service
 
 - name : daemon reload and restart the service
   ansible.builtin.systemd:
